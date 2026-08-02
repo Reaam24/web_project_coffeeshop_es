@@ -17,7 +17,7 @@ header {
     height: 100vh;
     min-height: 720px;
     max-height: 800px;
-    background: #fff url("images/background_header.svg") no-repeat center;
+    background: #fff url("./images/background_header.svg") no-repeat center;
     background-size: cover;
 }
 
