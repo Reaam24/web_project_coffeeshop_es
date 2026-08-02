@@ -41,8 +41,119 @@
             </div>
         </header>
         <main class="content">
-            <section class="reservation" id="reservation-id"></section>
+            <section class="reservation" id="reservation-id">
+
+              <h2 class="reservation__title">Reservar una mesa</h2>
+
+              <form action="#" method="GET" class="reservation__form">
+                <fieldset class="form__fieldset">
+                  <label for="nombre" class="form__label">
+                    Nombre *
+                  </label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Nombre"
+                    minlength="1"
+                    maxlength="20"
+                    required
+                  >
+
+                  <label for="comensales" class="form__label">
+                    Número de comensales *
+                  </label>
+                  <input
+                    class="form__input"
+                    type="number"
+                    id="comensales"
+                    name="comensales"
+                    placeholder="1-8"
+                    min="1"
+                    max="8"
+                    required
+                  >
+
+                  <label for="fechaYHora" class="form__label">
+                    Fecha y hora *
+                  </label>
+                  <input
+                    class="form__input"
+                    type="datetime-local"
+                    id="fechaYHora"
+                    name="fechaYHora"
+                    required
+                  >
+
+                  <label for="mail" class="form__label">
+                    Tu correo electrónico *
+                  </label>
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="mail"
+                    name="mail"
+                    placeholder="email@email.com"
+                    required
+                  >
+
+                  <button class="form__button" type="submit">
+                    Reservar una mesa
+                  </button>
+
+                  <label class="form__label form__label_type_checkbox" for="terminos">
+                    <input
+                      class="form__checkbox"
+                      type="checkbox"
+                      id="terminos"
+                      name="terminos"
+                      required
+                    >
+                    <span>Acepto los términos de uso</span>
+                  </label>
+                </fieldset>
+              </form>
+            </section>
         </main>
-        <footer class="footer" id="footer-id"></footer>
+        <footer class="footer" id="footer-id">
+  <div class="footer__circle"></div>
+
+  <img
+    class="footer__logo"
+    src="./images/logo_coffeeshop_light.svg"
+    alt="Logo de Triple Espresso"
+  >
+
+  <div class="footer__social">
+    <h3 class="footer__social-heading">Redes sociales</h3>
+
+    <ul class="footer__list">
+      <li class="footer__list-item">
+        <a class="footer__social-link" href="#">
+          <img
+            class="footer__social-icon"
+            src="./images/facebook_white.svg"
+            alt="Facebook"
+          >
+          Facebook
+        </a>
+      </li>
+
+      <li class="footer__list-item">
+        <a class="footer__social-link" href="#">
+          <img
+            class="footer__social-icon"
+            src="./images/instagram_white.svg"
+            alt="Instagram"
+          >
+          Instagram
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <p class="footer__copyright">© 2026 Erick Alvarez</p>
+</footer>
     </body>
 </html>
